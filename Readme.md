@@ -7,25 +7,25 @@ Install
  composer require hasan-22/open
 ```
 ### Functions
-| Function | Description                                                    |            Example            |
-|----------|:---------------------------------------------------------------|:-----------------------------:|
-| ready  | Checks that the class it creates has not already been created  |                               |
-| open   | Open file as array                                             |     open('filePath.txt')      |
-| write   | Writes the changes to the file                                             |       |
-| readLines    | Returns an array of file lines                                 ||
-| getString       | It converts the lines of the file that has been converted into an array into a string and returns it              |                               |
-| getLine      | Returns a particular line from the file         |          getLine(2)           |                          |
-|   firstLine    |get the first line of the file |                               |
-|   lastLine |      get the last line of the file                  ||
-|    between   |       Taking lines between two lines                  |         between(3,10)         |
-|    append   |    Adds the new word to the end of the file                    | append('word1','word2',....)  |
-|    appendTo   |      Adds the new word after the selected line of the file                   |    appendTo('new word',3)     |
-|   prepend    |       Adds the new word to the beginning of the file                 | prepend('word1','word2',....) |
-|   prependTo    |    Adds the new word to the beginning of the selected line of the file                    |    prependTo('new word',4)    |
-|   clean    |          Remove null or empty line              |                               |
-|    deleteLine   |      Delete a specific line                  |         deleteLine(2)         |
-|   emptyFile    |            It empties the file            |                               |
-|   fileSize    |      Returns the size of the file                  |                               |
+| Function | Return               | Description                                                                                           |            Example            |
+|----------|----------------------|:---------------------------------------------------------------|:-----------------------------:|
+| ready  | Object of class Open | Checks that the class it creates has not already been created                                        |                               |
+| open   | Object of class Open | Open file as array                                                                                   |     open('filePath.txt')      |
+| write   | Object of class Open | Writes the changes to the file                                                                       |       |
+| readLines    | array                | Returns an array of file lines                                                                       ||
+| getString       | string               | It converts the lines of the file that has been converted into an array into a string and returns it |                               |
+| getLine      | string               | Returns a particular line from the file                             |          getLine(2)           |                          |
+|   firstLine    | string               | get the first line of the file                                      |                               |
+|   lastLine | string               | get the last line of the file                                       ||
+|    between   | array                | Taking lines between two lines                                      |         between(3,10)         |
+|    append   | Object of class Open | Adds the new word to the end of the file                            | append('word1','word2',....)  |
+|    appendTo   | Object of class Open | Adds the new word after the selected line of the file               |    appendTo('new word',3)     |
+|   prepend    | Object of class Open | Adds the new word to the beginning of the file                      | prepend('word1','word2',....) |
+|   prependTo    | Object of class Open | Adds the new word to the beginning of the selected line of the file |    prependTo('new word',4)    |
+|   clean    | Object of class Open | Remove null or empty line                                           |                               |
+|    deleteLine   | Object of class Open | Delete a specific line                                              |         deleteLine(2)         |
+|   emptyFile    | Object of class Open | It empties the file                                                 |                               |
+|   fileSize    | string               | Returns the size of the file                                        |                               |
 
 
 ### For example, we want to add some text to our file
