@@ -1,0 +1,29 @@
+{
+    "name": "hasan-22/open",
+    "description": "It reads the whole file and you can perform a series of operations on it",
+    "keywords": [
+        "hasan",
+        "php",
+        "file",
+        "read file",
+        "write file",
+        "open"
+    ],
+    "homepage": "https://github.com/HASSAN-22/open",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hasan",
+            "email": "armiaevil@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Open\\": "src/"
+        }
+    }
+}
