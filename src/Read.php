@@ -6,7 +6,7 @@ trait Read
 {
     /**
      * Returns an array of file lines
-     * @return false|mixed|string
+     * @return array
      */
     public function readLines(){
         return $this->file;
@@ -24,26 +24,26 @@ trait Read
     /**
      * Returns a particular line from the file
      * @param int $line
-     * @return mixed
+     * @return string
      */
     public function getLine(int $line){
-        return $this->file[$line] ?? '';
+        return $this->file[$line] ?? "";
     }
 
     /**
      * get the first line of the file
-     * @return mixed
+     * @return string
      */
     public function firstLine(){
-        return $this->file[0];
+        return $this->file[0] ?? '';
     }
 
     /**
      * get the last line of the file
-     * @return mixed
+     * @return string
      */
     public function lastLine(){
-        return $this->file[array_key_last($this->file)];
+        return $this->file[array_key_last($this->file)] ?? '';
     }
 
     /**
